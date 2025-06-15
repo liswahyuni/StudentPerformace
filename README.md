@@ -1,37 +1,72 @@
-# Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Edutech
+# Final Project: Student Outcome Prediction and Analysis
 
 ## Business Understanding
-Jelaskan latar belakang bisnis dari perushaan tersebut.
 
-### Permasalahan Bisnis
-Tuliskan seluruh permasalahan bisnis yang akan diselesaikan.
+Jaya Jaya Institute, an educational institution established in 2000, has a strong reputation for producing high-quality graduates. However, the institute faces a significant challenge with a considerable number of students who do not complete their education and drop out. This high dropout rate is a major concern that the institute aims to address proactively.
 
-### Cakupan Proyek
-Tuliskan cakupan proyek yang akan dikerjakan.
+### Business Problem
 
-### Persiapan
+The primary business problem is the high student dropout rate. The institute needs to develop a system to identify a student's likely academic outcome as early as possible. This early identification will allow the institute to provide targeted guidance to students at risk of dropping out, while also understanding the profile of those likely to graduate.
 
-Sumber data: ....
+### Project Scope
 
-Setup environment:
-```
+The scope of this project is to assist Jaya Jaya Institute by:
 
+1.  Analyzing a comprehensive student dataset to identify the key factors that correlate with student outcomes.
+2.  Developing and comparing machine learning models, including **`RandomForestClassifier`** and **`XGBoostClassifier`**, for a multi-class classification task to predict if a student will `Dropout`, remain `Enrolled`, or `Graduate`.
+3.  Creating an interactive dashboard for the institute to monitor key student performance indicators.
+4.  Building a prototype of the machine learning system using the best-performing model.
+
+### Preparation
+
+**Data Source:**
+The dataset used for this project is the "Predict students' dropout and academic success" dataset from the UCI Machine Learning Repository. The original three-class target variable (`Dropout`, `Enrolled`, `Graduate`) was used for model training and evaluation.
+
+**Setup Environment:**
+To set up the environment, ensure you have Python installed. The required libraries are listed in the `requirements.txt` file and can be installed with a single command.
+
+Install the required libraries by running the following command in your terminal:
+
+```bash
+pip install -r requirements.txt
 ```
 
 ## Business Dashboard
-Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga link untuk mengakses dashboard tersebut.
 
-## Menjalankan Sistem Machine Learning
-Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Selain itu, sertakan juga link untuk mengakses prototype tersebut.
+An interactive business dashboard was created using Tableau to help the Jaya Jaya Institute management monitor student data effectively. The dashboard provides visualizations of the most critical factors influencing student outcomes. This tool enables the administration to quickly identify trends and patterns, facilitating data-driven strategic planning to improve student retention.
 
-```
+The dashboard can be accessed on Tableau Public via the following link:
+**[https://public.tableau.com/views/StudentPerformanceAnalysis\_1638/Dashboard1](https://www.google.com/search?q=https://public.tableau.com/views/StudentPerformanceAnalysis_1638/Dashboard1)**
 
+## Running the Machine Learning System
+
+A prototype of the machine learning system has been deployed as a Streamlit application. After evaluating multiple algorithms for the multi-class problem, the final system utilizes a trained model to provide real-time predictions. An administrator can input a student's information, and the system will output a prediction of the student's likely academic status: **Dropout, Enrolled, or Graduate**.
+
+The prototype is publicly hosted and can be accessed via the following link:
+**[https://studentperformace-liswahyuni.streamlit.app/](https://studentperformace-liswahyuni.streamlit.app/)** 
+
+To run the prototype locally, execute the following command in your terminal:
+
+```bash
+streamlit run app.py
 ```
 
 ## Conclusion
-Jelaskan konklusi dari proyek yang dikerjakan.
 
-### Rekomendasi Action Items
-Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
-- action item 1
-- action item 2
+This project successfully developed and evaluated robust machine learning models (**RandomForest** and **XGBoost**) for predicting student outcomes across three classes. The final model demonstrates strong performance, achieving an overall **weighted avg F1-score of training set approximately 86%** and **weighted avg F1-score of testing set approximately 75%**.
+
+The analysis consistently highlighted that the most significant predictors are:
+
+  * **Academic performance in the first and second semesters** (specifically the number of approved curricular units).
+  * **The student's financial status** (being a debtor or having tuition fees not up to date).
+  * **Age at enrollment**.
+
+The resulting models and dashboard provide Jaya Jaya Institute with powerful tools to transition from a reactive to a proactive approach in managing student pathways.
+
+### Recommended Action Items
+
+Based on the project findings, here are several actionable recommendations for Jaya Jaya Institute:
+
+  - **Implement an Early Warning System for At-Risk Students:** Use the model to flag students predicted as `Dropout`. These students should be automatically enrolled in a mandatory academic counseling and support program.
+  - **Provide Proactive Financial Counseling:** Instead of waiting for students to default, use the "Debtor" and "Tuition fees up to date" indicators to identify students facing financial hardship. Proactively offer them flexible payment plans, emergency aid, or guidance on available scholarships.
+  - **Create Targeted Support for Mature Students:** Since age is a factor, establish dedicated mentorship programs or support groups for students who are older at the time of enrollment to help them better integrate into the academic environment and manage external responsibilities.

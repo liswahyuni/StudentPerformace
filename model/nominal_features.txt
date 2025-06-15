@@ -1,0 +1,5 @@
+Course
+Mothers_occupation
+Fathers_occupation
+Marital_status
+Application_mode

@@ -1,0 +1,6 @@
+Daytime_evening_attendance
+Displaced
+Debtor
+Tuition_fees_up_to_date
+Gender
+Scholarship_holder

@@ -22,21 +22,43 @@ The scope of this project is to assist Jaya Jaya Institute by:
 **Data Source:**
 The dataset used for this project is the "Predict students' dropout and academic success" dataset from the UCI Machine Learning Repository. The original three-class target variable (`Dropout`, `Enrolled`, `Graduate`) was used for model training and evaluation.
 
+You can access the dataset via the following link **[here](https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/README.md#students-performance)**.
+
 **Setup Environment:**
-To set up the environment, ensure you have Python installed. The required libraries are listed in the `requirements.txt` file and can be installed with a single command.
+To set up the environment, ensure you have Python installed.
 
-Install the required libraries by running the following command in your terminal:
+1. Clone this repository to your local machine. (Please replace the URL with your actual repository link).
+```
+git clone https://github.com/liswahyuni/StudentPerformace.git
+```
+2. Navigate to the cloned project directory:
+```
+cd your-repository-name
+```
+3. Open and run Anaconda Prompt from this directory.
 
-```bash
+Create a new Conda environment (e.g., student-project):
+```
+conda create --name student-project python=3.10
+```
+4. Activate the newly created environment:
+```
+conda activate student-project
+```
+5. Install all the required libraries from the requirements.txt file:
+```
 pip install -r requirements.txt
 ```
-
+6. Open the notebook.ipynb file:
+```
+python notebook.ipynb
+```
 ## Business Dashboard
 
 An interactive business dashboard was created using Tableau to help the Jaya Jaya Institute management monitor student data effectively. The dashboard provides visualizations of the most critical factors influencing student outcomes. This tool enables the administration to quickly identify trends and patterns, facilitating data-driven strategic planning to improve student retention.
 
 The dashboard can be accessed on Tableau Public via the following link:
-**[https://public.tableau.com/views/StudentPerformanceAnalysis\_1638/Dashboard1](https://www.google.com/search?q=https://public.tableau.com/views/StudentPerformanceAnalysis_1638/Dashboard1)**
+**[Dashboard Student Performance](https://public.tableau.com/views/StudentPerformance_17499887362230/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
 ## Running the Machine Learning System
 
@@ -53,7 +75,7 @@ streamlit run app.py
 
 ## Conclusion
 
-This project successfully developed and evaluated robust machine learning models (**RandomForest** and **XGBoost**) for predicting student outcomes across three classes. The final model demonstrates strong performance, achieving an overall **weighted avg F1-score of training set approximately 86%** and **weighted avg F1-score of testing set approximately 75%**.
+This project successfully developed and evaluated the best robust machine learning model (**XGBoost**) for predicting student outcomes across three classes. The final model demonstrates strong performance, achieving an overall **weighted avg F1-score of training set approximately 86%** and **weighted avg F1-score of testing set approximately 75%**.
 
 The analysis consistently highlighted that the most significant predictors are:
 

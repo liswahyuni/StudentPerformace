@@ -5,3 +5,6 @@ scikit-learn
 matplotlib
 seaborn
 plotly
+pickle
+scipy
+xgboost

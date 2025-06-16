@@ -22,7 +22,7 @@ The scope of this project is to assist Jaya Jaya Institute by:
 **Data Source:**
 The dataset used for this project is the "Predict students' dropout and academic success" dataset from the UCI Machine Learning Repository. The original three-class target variable (`Dropout`, `Enrolled`, `Graduate`) was used for model training and evaluation.
 
-You can access the dataset via the following link **[here](https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/README.md#students-performance)**.
+You can access the dataset via the following link **[here](https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/data.csv)**.
 
 **Setup Environment:**
 To set up the environment, ensure you have Python installed.

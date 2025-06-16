@@ -77,11 +77,9 @@ streamlit run app.py
 
 This project successfully developed and evaluated the best robust machine learning model (**XGBoost**) for predicting student outcomes across three classes. The final model demonstrates strong performance, achieving an overall **weighted avg F1-score of training set approximately 86%** and **weighted avg F1-score of testing set approximately 75%**.
 
-The analysis consistently highlighted that the most significant predictors are:
+The dashboard reveals a critical situation at Jaya Jaya Institute, with a dropout rate of 32.12%, meaning nearly one-third of all students fail to complete their studies. While the student body is predominantly female (64.83%) and attends during the daytime (89.08%), these factors do not appear to be the primary drivers of the issue.
 
-  * **Academic performance in the first and second semesters** (specifically the number of approved curricular units).
-  * **The student's financial status** (being a debtor or having tuition fees not up to date).
-  * **Age at enrollment**.
+The most telling insight comes from the socio-economic breakdown of students who drop out. The treemap indicates a significant concentration of dropouts among students whose mothers are in unskilled occupations and have lower levels of formal education. This suggests that students from less privileged socio-economic backgrounds are disproportionately at risk of dropping out.
 
 The resulting models and dashboard provide Jaya Jaya Institute with powerful tools to transition from a reactive to a proactive approach in managing student pathways.
 
@@ -89,6 +87,14 @@ The resulting models and dashboard provide Jaya Jaya Institute with powerful too
 
 Based on the project findings, here are several actionable recommendations for Jaya Jaya Institute:
 
-  - **Implement an Early Warning System for At-Risk Students:** Use the model to flag students predicted as `Dropout`. These students should be automatically enrolled in a mandatory academic counseling and support program.
-  - **Provide Proactive Financial Counseling:** Instead of waiting for students to default, use the "Debtor" and "Tuition fees up to date" indicators to identify students facing financial hardship. Proactively offer them flexible payment plans, emergency aid, or guidance on available scholarships.
-  - **Create Targeted Support for Mature Students:** Since age is a factor, establish dedicated mentorship programs or support groups for students who are older at the time of enrollment to help them better integrate into the academic environment and manage external responsibilities.
+1.  **Develop Targeted Financial Aid and Support Programs:**
+    * **Action:** Proactively identify and reach out to students whose family backgrounds (as indicated by parental occupation and education) align with the high-risk profiles shown in the treemap.
+    * **Reasoning:** These students are the most vulnerable. Offering them targeted scholarships, flexible tuition payment plans, or part-time work opportunities can alleviate the financial pressure that is likely a major contributor to their decision to drop out.
+
+2.  **Establish a Mentorship Program:**
+    * **Action:** Create a mentorship program pairing first-generation students or those from at-risk backgrounds with successful senior students, alumni, or faculty members who have similar backgrounds.
+    * **Reasoning:** Beyond financial aid, these students may lack the social and academic support systems that are crucial for navigating higher education. A mentor can provide guidance, encouragement, and a valuable network.
+
+3.  **Integrate Early Academic Intervention:**
+    * **Action:** While not explicitly shown in this dashboard view, the next step is to cross-reference this socio-economic data with first-semester academic performance (like grades and approved credits). Students who fit the at-risk demographic *and* show early signs of academic struggle should be the top priority for intervention.
+    * **Reasoning:** Combining socio-economic risk factors with academic performance data will create a highly accurate early warning system, allowing the institute to intervene with academic counseling and support before it's too late.

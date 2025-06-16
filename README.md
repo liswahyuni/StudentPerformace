@@ -58,14 +58,14 @@ python notebook.ipynb
 An interactive business dashboard was created using Tableau to help the Jaya Jaya Institute management monitor student data effectively. The dashboard provides visualizations of the most critical factors influencing student outcomes. This tool enables the administration to quickly identify trends and patterns, facilitating data-driven strategic planning to improve student retention.
 
 The dashboard can be accessed on Tableau Public via the following link:
-**[Dashboard Student Performance](https://public.tableau.com/views/StudentPerformance_17499887362230/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
+**[Dashboard Student Performance](https://public.tableau.com/views/DashboardStudentPerformance/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
 ## Running the Machine Learning System
 
 A prototype of the machine learning system has been deployed as a Streamlit application. After evaluating multiple algorithms for the multi-class problem, the final system utilizes a trained model to provide real-time predictions. An administrator can input a student's information, and the system will output a prediction of the student's likely academic status: **Dropout, Enrolled, or Graduate**.
 
 The prototype is publicly hosted and can be accessed via the following link:
-**[https://studentperformace-liswahyuni.streamlit.app/](https://studentperformace-liswahyuni.streamlit.app/)** 
+**[https://studentperformance-liswahyuni.streamlit.app/](https://studentperformance-liswahyuni.streamlit.app/)** 
 
 To run the prototype locally, execute the following command in your terminal:
 
